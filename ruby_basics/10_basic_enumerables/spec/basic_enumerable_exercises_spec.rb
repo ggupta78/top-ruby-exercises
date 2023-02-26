@@ -14,15 +14,15 @@ RSpec.describe 'Basic Enumerable Exercises' do
     end
 
     # remove the 'x' from the line below to unskip the test
-    xit 'outputs item without quantity when value is nil' do
+    it 'outputs item without quantity when value is nil' do
       expect($stdout).to receive(:puts).with("pineapples, quantity: ")
       fruit = { pineapples: nil }
       display_current_inventory(fruit)
     end
   end
-  
+
   describe 'display guess order exercise' do
-    
+
     xit 'outputs each guess of strings in order' do
       expect($stdout).to receive(:puts).with("Guess #1 is cookies")
       expect($stdout).to receive(:puts).with("Guess #2 is cake")
@@ -41,7 +41,7 @@ RSpec.describe 'Basic Enumerable Exercises' do
   end
 
   describe 'find absolute values exercise' do
-    
+
     xit 'returns an array of positive integers' do
       numbers = [0, -7, 14, -21]
       result = [0, 7, 14, 21]
@@ -56,7 +56,7 @@ RSpec.describe 'Basic Enumerable Exercises' do
   end
 
   describe 'find low inventory exercise' do
-    
+
     xit 'returns a hash with integer values' do
       fruit = { apples: 1, peaches: 4, bananas: 3, oranges: 7 }
       result = { apples: 1, bananas: 3 }
@@ -71,13 +71,13 @@ RSpec.describe 'Basic Enumerable Exercises' do
   end
 
   describe 'find word length exercise' do
-    
+
     xit 'returns a hash with rocket syntax when using strings' do
       animals = ['cat', 'horse', 'rabbit', 'deer']
       result = { 'cat' => 3, 'horse' => 5, 'rabbit' => 6, 'deer' => 4 }
       expect(find_word_lengths(animals)).to eq(result)
     end
-    
+
     xit 'returns a hash with symbols syntax when using symbols' do
       animals = [:cat, :horse, :rabbit, :deer]
       result = { cat: 3, horse: 5, rabbit: 6, deer: 4 }
