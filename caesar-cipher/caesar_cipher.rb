@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def caesar_cipher(phrase, shift_count)
   shifted_phrase = ''
   phrase.each_char do |char|
